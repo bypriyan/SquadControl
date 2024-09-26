@@ -14,6 +14,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
+        multiDexEnabled = true
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -51,6 +52,14 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    //multidex
+    implementation ("androidx.annotation:annotation:1.6.0")
+    implementation ("org.jetbrains:annotations:24.0.1")
+    implementation ("androidx.multidex:multidex:2.0.1")
+    //sdp ssp
+    implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    implementation ("com.intuit.ssp:ssp-android:1.1.0")
+
     //splash screen
     implementation("androidx.core:core-splashscreen:1.0.1")
 
@@ -76,6 +85,15 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.6")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
     implementation ("androidx.core:core-ktx:1.13.1")
+
+    //room db
+    val room_version = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room_version")
 }
 
 kapt {
