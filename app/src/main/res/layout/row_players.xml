@@ -36,15 +36,4 @@
         android:textColor="@color/dark_greay"
         android:textSize="@dimen/_10ssp" />
 
-    <ImageView
-        android:layout_width="@dimen/_18sdp"
-        android:layout_height="@dimen/_18sdp"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/_12sdp"
-        android:padding="@dimen/_2sdp"
-        android:src="@drawable/ic_double_arrow"
-        app:tint="@color/appColor" />
-
-
 </RelativeLayout>

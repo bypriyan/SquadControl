@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_alignParentTop="true"
-        android:elevation="@dimen/_4sdp"
+        android:elevation="@dimen/_2sdp"
         android:background="@color/white">
 
         <androidx.appcompat.widget.AppCompatImageView
