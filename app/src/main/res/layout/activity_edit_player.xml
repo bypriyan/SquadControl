@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".activity.AddPlayerActivity">
+    tools:context=".activity.EditPlayerActivity">
 
     <RelativeLayout
         android:id="@+id/rel"
@@ -34,7 +34,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_8sdp"
             android:layout_toRightOf="@id/backBtn"
-            android:text="Add player"
+            android:text="Edit player"
             android:fontFamily="@font/bold"
             android:textColor="@color/black"
             android:textSize="@dimen/_13ssp"
@@ -182,7 +182,5 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
-
-
 
 </RelativeLayout>

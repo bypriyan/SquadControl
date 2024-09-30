@@ -16,6 +16,21 @@
         android:theme="@style/Theme.Ostiamare"
         tools:targetApi="31">
         <activity
+            android:name=".activity.EditPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateTrainingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TrainingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddGameDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddGameActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.AddPlayerActivity"
             android:exported="false" />
         <activity

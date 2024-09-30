@@ -11,5 +11,6 @@ data class ModelPlayer(
     val surName:String,
     val DOB:String,
     val Role:String,
+    val shirtNo:String,
     val notes:String
 )

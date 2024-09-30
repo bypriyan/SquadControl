@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".activity.AddPlayerActivity">
+    tools:context=".activity.AddGameDataActivity">
 
     <RelativeLayout
         android:id="@+id/rel"
@@ -34,7 +34,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/_8sdp"
             android:layout_toRightOf="@id/backBtn"
-            android:text="Add player"
+            android:text="Add Game"
             android:fontFamily="@font/bold"
             android:textColor="@color/black"
             android:textSize="@dimen/_13ssp"
@@ -63,7 +63,7 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/name"
+            android:id="@+id/date"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,53 +76,13 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
-                android:textColor="@color/black"
-                android:inputType="textPersonName"  />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/surName"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textColorHint="@color/greay"
-            app:hintTextColor="@color/black"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/_10sdp"
-            app:boxStrokeColor="@color/appColor">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Surname"
-                android:textColor="@color/black"
-                android:inputType="textPersonName"  />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/DOB"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textColorHint="@color/greay"
-            app:hintTextColor="@color/black"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/_10sdp"
-            app:boxStrokeColor="@color/appColor">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="DOB"
+                android:hint="Date"
                 android:textColor="@color/black"
                 android:inputType="text"  />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/role"
+            android:id="@+id/opponent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -136,13 +96,13 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Role"
+                android:hint="Opponent"
                 android:textColor="@color/black"
                 android:inputType="text"  />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/shirtNumber"
+            android:id="@+id/result"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -156,33 +116,11 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Shirt No."
+                android:hint="Result"
                 android:textColor="@color/black"
-                android:inputType="number"  />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/notes"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textColorHint="@color/greay"
-            app:hintTextColor="@color/black"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/_10sdp"
-            app:boxStrokeColor="@color/appColor">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Notes"
-                android:textColor="@color/black"
-                android:inputType="textMultiLine"  />
+                android:inputType="text"  />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
-
-
 
 </RelativeLayout>
