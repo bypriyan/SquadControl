@@ -42,6 +42,7 @@ class AddGameActivity : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
+        //this is change
         //back pressed
         onBackPressedDispatcher.addCallback(this, object: OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
